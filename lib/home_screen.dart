@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:io';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Your battery level is ${_batteryLevel}'),
+            Text('Your battery level is $_batteryLevel'),
             ElevatedButton(
               onPressed: _getBatteryLevel,
               child: const Text('Get Battery Level'),
